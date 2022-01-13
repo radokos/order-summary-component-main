@@ -1,0 +1,224 @@
+/**
+ * GENERAL
+ */
+ html {
+	box-sizing: border-box;
+    height: 100%;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+img{
+	max-width:100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+body {
+	font-size: 100%;
+	font-family: 'Trebuchet MS', Verdana, serif;
+    height: 100%;
+	
+}
+
+.attribution { font-size: 11px; text-align: center;width:100% }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* main*/
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-evenly;
+    background: #d6e1ffc9 url('../images/pattern-background-desktop.svg') no-repeat;
+    background-size: contain;
+    font-family:  Cambria Math, Arial, Helvetica, sans-serif;
+}
+main{
+    width: 19rem;
+    height: 27.8rem;
+    border-radius: 4%;
+    background-color: white;
+    
+}
+
+header {
+   background: url(../images/illustration-hero.svg) no-repeat ;
+   background-size: contain;
+   max-width: 450px;
+   height: 172px;
+   border-radius: 4%;
+}
+
+
+/*summary*/
+
+.summary {
+    text-align: center;
+}
+.summary h1 {
+    font-size: 1.3em;
+    word-spacing: -2px;
+    text-transform: capitalize;   
+}
+
+.summary p {
+        color: #7e8193;
+        font-size: 0.7em;
+        width: 75%;
+        margin: 0.8em auto;
+        margin-bottom: 2em;
+    }
+
+/*plan*/
+
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width: 84%;
+    margin: 0 auto;
+    background-color: #f8f9fe;
+    border-radius:4%;
+    padding: 1em 0em;
+
+}
+
+.plan svg{
+    margin-left: 0.7em;
+}
+
+.plan div {
+    align-self: center;
+}
+.plan > div:nth-child(2) > h2:nth-child(1) {
+    margin: 0px;
+    font-size: 0.9em;
+    letter-spacing: -0.5px;
+    padding-top: 0.2em;
+    margin-right:2em;
+    padding-bottom: 0.2em;
+    
+}
+
+
+.plan div  p {
+    margin: 0;
+    font-size: 0.9em;
+    text-transform: lowercase;
+    color: #7e8193;
+    }
+
+ .plan a {
+     align-self: center;
+     color: #4f46bd;
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding-right: 0.5em;
+ }   
+
+ /*payment*/
+ .payment {
+    width: 84%;
+    margin: 1.6em auto;
+ }
+ .payment a {
+    display: inline-block; 
+    width: 90% ;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+ }
+
+ .payment a:first-child{
+     
+     
+     padding: 0.8em 1em;
+     background-color: #382ae1;
+     color: white;
+     border-radius: 4px;
+     margin: 0 auto;
+     font-size: 0.7em;
+     font-weight: bold;
+ }
+
+ .payment a:last-child{
+    color: #7e8193;
+    text-transform: capitalize;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-top: 1.6em;
+
+ }
+
+
+ /*active*/
+ .plan a:hover,
+ .plan a:active{
+     color:#766cf1;
+     text-decoration: none;
+ }
+
+ .payment a:first-child:hover,
+ .payment a:first-child:active{
+    background-color: #766cf1;
+    
+ }
+ .payment a:last-child:hover,
+ .payment a:last-child:active{
+   color:black;
+ }
+
+
+ /*media queries*/
+
+@media ( max-width:365px){
+   
+     main{
+         width: 16rem;
+         height: 25.8rem;
+     }
+     header{
+        height: 8.56em;
+     }
+     .summary p {
+         margin-bottom: 1.5em;
+     }
+    .payment{
+        margin: 1em auto;
+    }
+    
+    .payment a:last-child{
+        margin-top: 1.2em;
+    }
+
+   }
+
+   @media ( max-width:300px){
+   
+    main{
+        width: 95%;
+        height: auto;
+        
+    }
+    .plan{
+        display: initial;
+    }
+    .plan div {
+        text-align: center;
+    }
+    .plan a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .plan > div:nth-child(2) > h2:nth-child(1){
+        margin-right: 0em;
+    }
+    .plan svg {
+        margin-left: 38%;
+    }
+  }
